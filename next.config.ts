@@ -11,6 +11,9 @@ const nextConfig: NextConfig = {
     // Requerido para export estático en GitHub Pages
     unoptimized: true,
   },
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isGithubPages ? `/${repoName}` : "",
+  },
   // Ajusta rutas cuando se sirve bajo /<repo>
   ...(isGithubPages
     ? {

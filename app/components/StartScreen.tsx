@@ -10,7 +10,7 @@ export default function StartScreen({ onStart }: StartScreenProps) {
       <div className="mb-6 animate-fade-in">
         <div className="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden shadow-xl">
           <Image
-            src="/ldc.png"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/ldc.png`}
             alt="Imagen principal"
             fill
             className="object-cover dark:invert"
