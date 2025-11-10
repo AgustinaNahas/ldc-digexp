@@ -38,7 +38,7 @@ export default function Home() {
   };
 
   return (
-    <div className="h-screen bg-gray-50 dark:bg-gray-900 overflow-hidden">
+    <div className="h-screen bg-background ">
       {gameState === "start" && <StartScreen onStart={handleStart} />}
       {gameState === "playing" && (
         <div className="h-full flex flex-col items-center justify-center">
